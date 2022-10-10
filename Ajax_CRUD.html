@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      header{
+        color: blueviolet;
+        text-align: center;
+
+      }
+      #info{
+        background-color: antiquewhite;
+         
+      }
+      #image_container
+      {
+          display: flex;
+          float: left;
+          height: 255px;
+          width: 280px;
+          background-color:#d9dcd5;
+      }
+      #image_container img{
+          height: 250px;
+          width: 250px;
+      }
+      .dd
+      {
+        background-image: url(ab1.png);
+      }
+      #btn
+      {
+        font-size: x-large;
+       
+      }
+      
+      
+
+    </style>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+    function emp_delete(id)
+    {
+        console.log("In delete",id);
+        $.ajax(
+            {
+                url:" http://localhost:3000/Reg/"+id, 
+                type:"DELETE",
+                success:function()
+                {
+                    console.log("Deleted the record")
+                },
+                error:function()
+                {
+                    console.log("try again");
+                }
+            }
+            )
+    }
+    function redirect(id){
+            const eid = id;
+            localStorage.setItem('id', eid);
+            window.location.href="update.html";
+        }
+        function add_data()
+        {
+            window.location.href="form.html";
+        }
+    $(document).ready(
+        function()
+        { 
+            // function display(obj)
+            // {
+            //     var fp=obj.image;
+            //     console.log(fp);
+            //     var image_path=fp.replace('C:\\fakepath\\','./')
+            //     console.log(image_path);
+            //     // document.getElementById("info").innerHTML+="<tr><td>"
+            //     //         +image_path 
+            //     //             // +"<td><img src='"+obj.image+"' height='150px' width='100px'></td>"
+            //     //             // "<button onclick='emp_delete("+obj.id+")'>Delete Your Information</button></td><td>"
+            //     //             // +"<button onclick='redirect("+obj.id+")'>Update Your Information</button></td></tr>";
+               
+            // }
+            $.get("http://localhost:3000/Reg",
+            function(info,status)
+            {
+                console.log(info,"  ",status);
+                for(var obj of info)
+                {
+                    var fp=obj.image;
+                    console.log("Fake",fp);
+                    var img_path=fp.replace('C:\\fakepath\\','./')
+                    console.log("Actual",img_path);
+                    document.getElementById("info").innerHTML+= 
+                    "<div id='image_container'><img src='"+img_path+"'>";
+                }
+            })
+        }
+    )
+</script>
+</head>
+<body class="dd">
+  <header class="container-fluid"><h1><u>Enter your Description</u></h1></header>
+  
+    <div id="info">
+       
+
+ 
+    </div>
+
+    <button class="btn btn-outline-success" > <a href="HomePage.html"  id="btn" > Home Page>>>> </a></button> <br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- <style >
+        body{background-image:url("bg2.png")}
+        </style> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widt, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="HomePage.css">
+
+    <head>
+        <title>Slideshow Images</title>
+        <style>
+            * {
+                box-sizing: border-box
+            }
+
+            body {
+                font-family: Verdana, sans-serif;
+
+            }
+
+            .mySlides {
+                display: none
+            }
+
+            img {
+                vertical-align: middle;
+                width: 700px;
+                margin-left: 0%;
+                height: 500px;
+
+            }
+
+            .slideshow-container {
+                max-width: 100%;
+                /* max-height: 100px; */
+                position: relative;
+                margin-left: 80px;
+
+
+            }
+
+           
+            
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /*  */
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            /* Caption text
+            .text {
+                color: #ffffff;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #ffffff;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            */
+            /* The dots/bullets/indicators */
+            /* .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #999999;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }  */
+
+            .active,
+            .dot:hover {
+                background-color: #111111;
+            }
+
+            /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+
+                .prev,
+                .next,
+                .text {
+                    font-size: 11px
+                }
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: rgb(130, 212, 223);
+                min-width: 160px;
+                /* box-shadow: 0px 2px 15px 0px rgb(172, 111, 111); */
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: rgb(245, 197, 125);
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
+
+    </head>
+
+
+<body style=background-image:url(ab1.png)>
+
+    <header>
+        <h1 class="h1">
+            <center>MEET ARTIST </center>
+        </h1>
+        <nav class="n1" style="height:65px">
+
+
+
+
+            <div class="vv">
+                <table>
+                    <tr>
+
+
+
+                        <td>
+                            <h5>USER:</h5>
+                            <a href="UserLoginPage.html" target="_blank"> Login </a>&nbsp;
+                            <a href="Userregistertrue.html" target="_blank">REGISTER </a>&nbsp;
+                        </td>
+
+                        <td> &emsp; &emsp;&emsp;&emsp;&emsp; </td>
+
+                        <td>
+                            <h5>ARTIST:</h5>
+                            <a href="ArtistLoginPage.html" target="_blank"> Login </a>
+                            <a href="Artistregistertrue.html" target="_blank">REGISTER </a>
+                        </td>
+
+                        <td> &emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+                        <td>
+                            <div>
+
+
+                                <!-- 
+                                <select name="dropdown" id="dp" class="form-control form-control-lg">
+                                    <option class="btn btn-secondary"> Select ART</option>
+
+                                    <option class="btn btn-dark"><a href="dance.html">Dance</option></a>
+
+
+
+
+                                    <option class="btn btn-dark">Music</option>
+                                    <option class="btn btn-dark">Art</option>
+                                    <option class="btn btn-dark">Architecture</option>
+                                    <option class="btn btn-dark">Sculpture</option>
+                                    <option class="btn btn-dark">Theatre</option>
+                                    <option class="btn btn-dark">Literature</option>
+                                    <option class="btn btn-dark">Poetry</option> -->
+
+                                <div class="dropdown">
+                                    <button class="btn  btn-outline-info"><a class="nav-link" href="#">SELECT ART TO
+                                            KNOW MORE...</a></button>
+                                    <div class="dropdown-content">
+                                        <a target="_blank" href="dance.html"> DANCE </a>
+                                        <a target="_blank" href="art.html">ART</a>
+                                        <a target="_blank" href="architecture.html">ARCHITECTURE</a>
+                                        <a href="sculpture.html">SCULPTURE </a>
+                                        <a href="theatre.html">THEATRE</a>
+                                        <a href="litreature.html">LITREATURE </a>
+                                        <a href="poetry.html">POETRY</a>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+            </div>
+            </div>
+            </td>
+
+
+
+            </tr>
+            </table>
+            </div>
+
+        </nav>
+        <br>
+    </header>
+    <!-- <div class="aside">
+        <aside>
+            <div class="caro">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+
+
+                            <div class="col-sm-12 scroll">
+                                <div class="card bg-secondary" styles="width:300px  height:750px">
+                                    <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                                        <h3 allign="center">DANCE</h3>
+                                    </div>
+                                    <div class="card-body"><img src="dance.jfif" alt="ART" class="card-img-top">
+                                        <div class="card-body">
+                                            <marquee behavior="up" direction="up" scrollamount="4">Indian dance is one
+                                                of the
+                                                most
+                                                revered identities of our culture. In India, dance forms can be broadly
+                                                classified
+                                                into
+                                                2 categories- classical and folk dance form. These dance forms have been
+                                                originated
+                                                from
+                                                different parts of India as per the local tradition.
+
+
+                                            </marquee>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="col-sm-12 scroll">
+                                <div class="card bg-secondary" style="width:700px">
+
+                                    <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                                        <h3 allign="center">LITERATURE</h3>
+
+                                        <div class="card-body"><img src="literature.jfif" alt="ART"
+                                                class="card-img-top">
+                                            <div class="card-body ">
+                                                Indian literature refers to the
+                                                literature produced on the Indian subcontinent until 1947 and in the
+                                                Republic of
+                                                India
+                                                thereafter. The term "Indian literature" is sometimes used more loosely
+                                                to refer
+                                                to
+                                                literature of the Indian diaspora (people of Indian origin living
+                                                outside of
+                                                India).
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div class="col-sm-12 scroll">
+                                <div class="card bg-secondary" style="width:700px ">
+
+                                    <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                                        <h3 allign="center">ARCHITECTURE</h3>
+                                    </div>
+                                    <div class="card-body"><img src="architecture.jfif" alt="ART" class="card-img-top">
+                                        <div class="card-body">
+                                            <marquee behavior="up" direction="up" scrollamount="4"> The Indian
+                                                architecture is
+                                                rooted in
+                                                its history, culture and religion. Among a number of architectural
+                                                styles and
+                                                traditions, the best-known include the many varieties of Hindu temple
+                                                architecture,
+                                                Indo-Islamic architecture, especially Mughal architecture, Rajput
+                                                architecture
+                                                and
+                                                Indo-Saracenic architecture.</marquee>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="col-sm-12 scroll" style="height:500px">
+                                <div class="card bg-secondary " style="width:700px ">
+
+                                    <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                                        <h3 allign="center">MUSIC</h3>
+                                    </div>
+                                    <div class="card-body"><img src="music.jfif" alt="ART" class="card-img-top">
+                                        <div class="card-body ">
+
+                                        </div>
+                                        <marquee behavior="up" direction="up" scrollamount="4">
+                                            Indian music consists of folk, classical (Hindustani and Carnatic) and pop
+                                            music,
+                                            among
+                                            others. The Classical music is characterized by microtones (or shruti),
+                                            notes (or
+                                            swara),
+                                            ornamentations (or alankar), melodies improvised from grammar (or raga) and
+                                            rhythmic
+                                            patterns used in percussion (or tala).
+                                            A brief treatment of Indian sculpture follows. For full treatment, see South
+                                            Asian
+                                            arts:
+                                            Indian sculpture.
+                                        </marquee>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="col-sm-12 scroll">
+                                <div class="card bg-secondary" style="width:700px ">
+
+                                    <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                                        <h3 allign="center">THEATRE</h3>
+                                    </div>
+                                    <div class="card-body"><img src="theatre.jfif" alt="ART" class="card-img-top">
+                                        <div class="card-body">
+                                            <marquee behavior="up" direction="up" scrollamount="4">Theatre of India is
+                                                one of
+                                                the
+                                                most
+                                                ancient forms of theatre and it features a detailed textual, sculptural,
+                                                and
+                                                dramatic
+                                                effects which emerged in mid first millennium BC.[1][2] Like in the
+                                                areas of
+                                                music
+                                                and
+                                                dance, the Indian theatre is also defined by the dramatic performance
+                                                based on
+                                                the
+                                                concept of Nritya
+                                            </marquee>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div> -->
+    </div>
+    <div class="div1">
+        <aside>
+            <div class="f">
+                <h1>Folk art</h1>
+            </div>
+            <div class="f2">
+                <h4>the traditional decorative or utilitarian art of the people that is often an expression of
+                    community life and is distinguished from academic or self-conscious or cosmopolitan expression
+                    Along with exhibits showcasing such folk art as quilts, jewelry and toys, visitors learn about
+                    the influence of folk art on contemporary art through tours, programs, symposia and art
+                    workshops.</h4>
+            </div>
+
+        </aside>
+    </div>
+    <br><br>
+    <div class="try" style="margin-left:0%" ;>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+
+                <img src="img1.jpg" style="width:90%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="img2.jpg" style="width:90%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="img3.jpg" style="width:90%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="img4.jpg" style="width:90%">
+            </div>
+            <div class="mySlides fade">
+
+                <img src="IMG5.jfif" style="width:90%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="img6.jpg" style="width:90%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="img7.jpg" style="width:90%">
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <br>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!-- <div class="div1">
+
+        <div class="container" background-color="red">
+            <div class="row">
+                <div class="col-sm-3 scroll">
+                    <div class="card bg-secondary" styles="width:250px" height:200px>
+
+                        <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                            <h3 allign="center">DANCE</h3>
+                        </div>
+                        <div class="card-body"><img src="dance.jfif" alt="ART" class="card-img-top">
+                            <div class="card-body">
+                                <marquee behavior="up" direction="up" scrollamount="4">Indian dance is one of the most
+                                    revered identities of our culture. In India, dance forms can be broadly classified
+                                    into
+                                    2 categories- classical and folk dance form. These dance forms have been originated
+                                    from
+                                    different parts of India as per the local tradition.
+
+
+                                </marquee>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="col-sm-3 scroll">
+                    <div class="card bg-secondary" styles="width:150px" >
+
+                        <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                            <h3 allign="center">LITERATURE</h3>
+                        </div>
+                        <div class="card-body"><img src="literature.jfif" alt="ART" class="card-img-top">
+                            <div class="card-body ">
+                                <marquee behavior="up" direction="up" scrollamount="4">Indian literature refers to the
+                                    literature produced on the Indian subcontinent until 1947 and in the Republic of
+                                    India
+                                    thereafter. The term "Indian literature" is sometimes used more loosely to refer to
+                                    literature of the Indian diaspora (people of Indian origin living outside of India).
+                                </marquee>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-3 scroll">
+                    <div class="card bg-secondary" style="width:250px">
+
+                        <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                            <h3 allign="center">ARCHITECTURE</h3>
+                        </div>
+                        <div class="card-body"><img src="architecture.jfif" alt="ART" class="card-img-top">
+                            <div class="card-body">
+                                <marquee behavior="up" direction="up" scrollamount="4"> The Indian architecture is
+                                    rooted in
+                                    its history, culture and religion. Among a number of architectural styles and
+                                    traditions, the best-known include the many varieties of Hindu temple architecture,
+                                    Indo-Islamic architecture, especially Mughal architecture, Rajput architecture and
+                                    Indo-Saracenic architecture.</marquee>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 scroll">
+                    <div class="card bg-secondary " style="width:250px ">
+
+                        <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                            <h3 allign="center">MUSIC</h3>
+                        </div>
+                        <div class="card-body"><img src="music.jfif" alt="ART" class="card-img-top">
+                            <div class="card-body ">
+
+                            </div>
+                            <marquee behavior="up" direction="up" scrollamount="4">
+                                Theatre of India is one of the
+                                most
+                                ancient forms of theatre and it features a detailed textual, sculptural, and
+                                dramatic
+                                effects which emerged in mid first millennium BC.[1][2] Like in the areas of music
+                                and
+                                dance, the Indian theatre is also defined by the dramatic performance based on the
+                                concept of NrityaTheatre of India is one of the
+                                most
+                                ancient forms of theatre and it features a detailed textual, sculptural, and
+                                dramatic
+                                effects which emerged in mid first millennium BC.[1][2] Like in the areas of music
+                                and
+                                dance, the Indian theatre is also defined by the dramatic performance based on the
+                                concept of NrityaTheatre of India is one of the
+                                most
+                                ancient forms of theatre and it features a detailed textual, sculptural, and
+                                dramatic
+                                effects which emerged in mid first millennium BC.[1][2] Like in the areas of music
+                                and
+                                dance, the Indian theatre is also defined by the dramatic performance based on the
+                                concept of Nritya
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 scroll">
+                    <div class="card bg-secondary" style="width:250px">
+
+                        <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                            <h3 allign="center">SCULPTURE</h3>
+                        </div>
+                        <div class="card-body"><img src="sculpture.jfif" alt="ART" class="card-img-top">
+                            <div class="card-body">
+                                <marquee behavior="up" direction="up" scrollamount="4">
+                                    Indian sculpture, the sculptural traditions, forms, and styles of the civilizations
+                                    of
+                                    the Indian subcontinent.
+                                    A brief treatment of Indian sculpture follows. For full treatment, see South Asian
+                                    arts:
+                                    Indian sculpture.
+                                    A brief treatment of Indian sculpture follows. For full treatment, see South Asian
+                                    arts:
+                                    Indian sculpture.</marquee>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 scroll">
+                    <div class="card bg-secondary" style="width:250px">
+
+                        <div class="card card-title" style="background-color:rgb(143, 84, 84)">
+                            <h3 allign="center">THEATRE</h3>
+                        </div>
+                        <div class="card-body"><img src="theatre.jfif" alt="ART" class="card-img-top">
+                            <div class="card-body">
+                                <marquee behavior="up" direction="up" scrollamount="4">Theatre of India is one of the
+                                    most
+                                    ancient forms of theatre and it features a detailed textual, sculptural, and
+                                    dramatic
+                                    effects which emerged in mid first millennium BC.[1][2] Like in the areas of music
+                                    and
+                                    dance, the Indian theatre is also defined by the dramatic performance based on the
+                                    concept of Nritya</marquee>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 scroll">
+                    <div class="card bg-secondary " style="width:250px">
+
+                        <div class="card card-title" style="background-color:brown">
+                            <h3 allign="center">POETRY</h3>
+                        </div>
+                        <div class="card-body"><img src="poetry.jfif" alt="ART" class="card-img-top">
+                            <div class="card-body">
+                                <marquee behavior="up" direction="up" scrollamount="4">Indian poetry and Indian
+                                    literature
+                                    in general, has a long history dating back to Vedic times. They were written in
+                                    various
+                                    Indian languages such as Vedic Sanskrit, Classical Sanskrit, Tamil, Odia, Maithili,
+                                    Telugu, Kannada, Bengali, Assamese, Urdu, and Hindi.
+                                    A brief treatment of Indian sculpture follows. For full treatment, see South Asian
+                                    arts:
+                                    Indian sculpture.
+                                </marquee>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 scroll">
+                    <div class="card bg-secondary" style="width:250px">
+
+                        <div class="card card-title" style="background-color:brown">
+                            <h3 allign="center">ARTS & CRAFTS</h3>
+                        </div>
+                        <div class="card-body"><img src="artcraft.jfif" alt="ART" class="card-img-top">
+                            <div class="card-body ">
+                                <marquee behavior="up" direction="up" scrollamount="4">From time immemorial, India is
+                                    known
+                                    for its customs. As far as art and culture are concerned, India features amongst the
+                                    topmost rated culturally rich countries in the world. The handicrafts of India have
+                                    been
+                                    loved and respected worldwide and have left everyone awestruck. Many rural people
+                                    still
+                                    earn their livelihood from their creative pieces of art and India has still managed
+                                    to
+                                    preserve its artisans, its art and its handicrafts.</marquee>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
+ <br><br><br><br>
+<div class="row1" style="width: 100%;">
+ <div class="row" style="margin-left: 100px;">
+    <div class="col-sm-3">
+        <div class="card" >
+
+            <div class="card-body"><img src="dance.jfif" alt="ART" class="card-img-top" style="height:200px;">
+
+                <p class="card-text">Indian dance is one of the most
+                    revered identities of our culture. In India, dance forms can be broadly classified
+                    into
+                    2 categories- classical and folk dance form. These dance forms have been originated
+                    from
+                    different parts of India as per the local tradition..</p>
+                <a href="dance.html" class="btn btn-primary">Read more </a>
+            </div>
+           
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+
+            <div class="card-body"><img src="music.jfif" alt="ART" class="card-img-top"style="height:200px;">
+
+                <p class="card-text">Theatre of India is one of the
+                    most
+                    ancient forms of theatre and it features a detailed textual, sculptural, and
+                    dramatic
+                    effects which emerged in mid first millennium BC.Like in the areas of music
+                    andid first millenid first millenid first millenid first millen
+                  
+                    most.</p>
+                <a href="music.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="card">
+
+            <div class="card-body"><img src="literature.jfif" alt="ART" class="card-img-top"style="height:200px;">
+
+                <p class="card-text">Indian literature refers to the
+                    literature produced on the Indian subcontinent until 1947 and in the Republic of
+                    India
+                    thereafter. The term "Indian literature" is sometimes used more loosely to refer to
+                    literature of the Iing outside of India.</p>
+                <a href="litreature.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="row" style="margin-left: 100px;">
+    <div class="col-sm-3">
+        <div class="card">
+
+            <div class="card-body"><img src="architecture.jfif" alt="ART" class="card-img-top"style="height:200px;">
+
+                <p class="card-text">The Indian architecture is
+                    rooted in
+                    its history, culture and religion. Among a number of architectural styles and
+                    traditions, the best-known include the many varieties of Hindu temple architecture,
+                    Indo especially Mughal architecture, Rajput architecture and
+               p>
+                <a href="architecture.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="card">
+
+            <div class="card-body"><img src="sculpture.jfif" alt="ART" class="card-img-top"style="height:200px;">
+                <p class="card-text">Indian sculpture, the sculptural traditions, forms, and styles of the
+                   
+                    the Indian subcontinent.
+                    A brief treatment of Indian sculpture follows. For full treatment, see South Asian
+                    
+                    A brief treatment of Indian sculpture follows. For full treatment, see South Asian
+                .</p>
+                <a href="sculpture.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body"><img src="theatre.jfif" alt="ART" class="card-img-top"style="height:200px;">
+
+                <p>
+                    most
+                    ancient forms of theatre and it features a detailed textual, sculptural, and
+                    dramatic
+                    effefirst millennium BC. Like in the areas of music
+                    and
+                    dance, the Indian theatre is also defined by the dramatic performance based on the
+                    concept of Nritya.</p>
+                <a href="theatre.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <footer class="foot">
+        <a href="Subscribe.html" target="_blank"> SubScribe Us</a> &nbsp;
+        <a href="About_us.html" target="_blank"> About Us</a>&nbsp;
+
+
+    </footer>
+
+
+</body>
+
+</html>

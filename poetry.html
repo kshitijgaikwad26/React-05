@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body 
+        {
+            background-image: url(ab1.png);
+        }
+        header
+        {
+            text-align: center;
+            color: blueviolet;
+        }
+        #m1
+        {
+            height: 50%;
+            width: 60%;
+            margin-left: 280px;
+            margin-top: 50px;
+        }
+        .m2
+        {
+            height: 500px;
+            width: 60%;
+            overflow: scroll;
+            margin-left: 280px;
+            margin-top: 25px;
+        }
+    </style>
+     <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+    
+</head>
+<body>
+    <header><h1><strong><i>POETRY</i></strong></h1></header>
+
+
+    <!-- Carousel  -->
+    
+      <div id="m1" >
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="p2.webp" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="p1.jfif" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="p3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="m2">
+        <p><h5>Western traditions
+
+            Aristotle
+            Classical thinkers in the West employed classification as a way to define and assess the quality of poetry. Notably, the existing fragments of Aristotle's Poetics describe three genres of poetry—the epic, the comic, and the tragic—and develop rules to distinguish the highest-quality poetry in each genre, based on the perceived underlying purposes of the genre. Later aestheticians identified three major genres: epic poetry, lyric poetry, and dramatic poetry, treating comedy and tragedy as subgenres of dramatic poetry.
+            
+            
+            John Keats
+            Aristotle's work was influential throughout the Middle East during the Islamic Golden Age, as well as in Europe during the Renaissance. Later poets and aestheticians often distinguished poetry from, and defined it in opposition to prose, which they generally understood as writing with a proclivity to logical explication and a linear narrative structure.
+            
+            This does not imply that poetry is illogical or lacks narration, but rather that poetry is an attempt to render the beautiful or sublime without the burden of engaging the logical or narrative thought-process. English Romantic poet John Keats termed this escape from logic "negative capability".[27] This "romantic" approach views form as a key element of successful poetry because form is abstract and distinct from the underlying notional logic. This approach remained influential into the 20th century.
+            
+            During the 18th and 19th centuries, there was also substantially more interaction among the various poetic traditions, in part due to the spread of European colonialism and the attendant rise in global trade. In addition to a boom in translation, during the Romantic period numerous ancient works were rediscovered.
+            
+            20th-century and 21st-century disputes
+            
+            Archibald MacLeish
+            Some 20th-century literary theorists rely less on the ostensible opposition of prose and poetry, instead focusing on the poet as simply one who creates using language, and poetry as what the poet creates.[31] The underlying concept of the poet as creator is not uncommon, and some modernist poets essentially do not distinguish between the creation of a poem with words, and creative acts in other media. Yet other modernists challenge the very attempt to define poetry as misguided.
+            
+            The rejection of traditional forms and structures for poetry that began in the first half of the 20th century coincided with a questioning of the purpose and meaning of traditional definitions of poetry and of distinctions between poetry and prose, particularly given examples of poetic prose and prosaic poetry. Numerous modernist poets have written in non-traditional forms or in what traditionally would have been considered prose, although their writing was generally infused with poetic diction and often with rhythm and tone established by non-metrical means. While there was a substantial formalist reaction within the modernist schools to the breakdown of structure, this reaction focused as much on the development of new formal structures and syntheses as on the revival of older forms and structures.
+          
+            Postmodernism goes beyond modernism's emphasis on the creative role of the poet, to emphasize the role of the reader of a text (hermeneutics), and to highlight the complex cultural web within which a poem is read.[34] Today, throughout the world, poetry often incorporates poetic form and diction from other cultures and from the past, further confounding attempts at definition and classification that once made sense within a tradition such as the Western canon.
+            
+            The early 21st-century poetic tradition appears to continue to strongly orient itself to earlier precursor poetic traditions such as those initiated by Whitman, Emerson, and Wordsworth. The literary critic Geoffrey Hartman (1929–2016) used the phrase "the anxiety of demand" to describe the contemporary response to older poetic traditions as "being fearful that the fact no longer has a form",[36] building on a trope introduced by Emerson. Emerson had maintained that in the debate concerning poetic structure where either "form" or "fact" could predominate, that one need simply "Ask the fact for the form." This has been challenged at various levels by other literary scholars such as Harold Bloom (1930–2019), who has stated: "The generation of poets who stand together now, mature and ready to write the major American verse of the twenty-first century, may yet be seen as what Stevens called 'a great shadow's last embellishment,' the shadow being Emerson's.</h5></p>
+    </div>
+
+</body>
+</html>
